@@ -15,7 +15,7 @@ import requests
 import os
 import re
 import uuid
-
+import numpy as np
 
 app = Flask(
     __name__,
@@ -57,19 +57,27 @@ class PortfolioRAGChatBot:
         )
 
         self.sections = self.load_knowledge()
+        print(f"Sections loaded: {len(self.sections)}")
 
         self.chunks = self.create_chunks()
+        print(f"Chunks created: {len(self.chunks)}")
 
         self.chunk_texts = [
             chunk["text"]
             for chunk in self.chunks
         ]
 
+        print("Generating embeddings...")
+
         self.embeddings = self.model.encode(
             self.chunk_texts,
-            convert_to_tensor=True,
-            normalize_embeddings=True
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+            batch_size=8,
+            show_progress_bar=False
         )
+        
+        print("Embeddings generated!")
 
         self.conversations = {}
 
@@ -1043,7 +1051,7 @@ class PortfolioRAGChatBot:
 
         query_embedding = self.model.encode(
             query,
-            convert_to_tensor=True,
+            convert_to_numpy=True,
             normalize_embeddings=True
         )
 
@@ -1060,10 +1068,10 @@ class PortfolioRAGChatBot:
                 continue
 
             score = float(
-                util.cos_sim(
+                np.dot(
                     query_embedding,
                     self.embeddings[index]
-                )[0][0]
+                )
             )
 
             candidates.append({
@@ -1090,32 +1098,27 @@ class PortfolioRAGChatBot:
 
         query_embedding = self.model.encode(
             query,
-            convert_to_tensor=True,
+            convert_to_numpy=True,
             normalize_embeddings=True
         )
 
-        scores = util.cos_sim(
-            query_embedding,
-            self.embeddings
-        )[0]
+        scores = np.dot(
+            self.embeddings,
+            query_embedding
+        )
 
         result_count = min(
             top_k,
             len(self.chunks)
         )
 
-        top_results = scores.topk(
-            k=result_count
-        )
+        top_indices = np.argsort(scores)[::-1][:result_count]
 
         results = []
 
-        for score, index in zip(
-            top_results.values,
-            top_results.indices
-        ):
+        for index in top_indices:
 
-            score_value = float(score)
+            score_value = float(scores[index])
 
             if score_value < 0.28:
                 continue
@@ -1731,7 +1734,7 @@ def reset_chat():
         "conversation_id"
     )
 
-    if conversation_id:
+    if conversation_id and chatbot is not None:
 
         chatbot.conversations.pop(
             conversation_id,
@@ -1751,8 +1754,10 @@ def reset_chat():
 
 if __name__ == "__main__":
 
+    port = int(os.environ.get("PORT", 7860))
+
     app.run(
         host="0.0.0.0",
-        port=7860,
+        port=port,
         debug=False
     )
