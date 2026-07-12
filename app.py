@@ -1634,7 +1634,14 @@ Write a natural final answer for the visitor.
         return response
 
 
-chatbot = PortfolioRAGChatBot()
+chatbot = None
+def get_chatbot():
+    global chatbot
+
+    if chatbot is None:
+        chatbot = PortfolioRAGChatBot()
+
+    return chatbot
 
 
 # =============================================================
@@ -1691,7 +1698,7 @@ def chat():
             "conversation_id"
         ]
 
-        response = chatbot.get_response(
+        response = get_chatbot().get_response(
             user_message,
             conversation_id
         )
