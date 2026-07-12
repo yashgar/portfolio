@@ -39,11 +39,13 @@ class PortfolioRAGChatBot:
 
     def __init__(self):
 
-        print("Loading AI portfolio assistant...")
+        print("Step 1: Starting chatbot...")
 
-        self.model = SentenceTransformer(
-            "all-MiniLM-L6-v2"
-        )
+        print("Step 2: Loading SentenceTransformer...")
+        self.model = SentenceTransformer("all-MiniLM-L6-v2")
+        print("Model loaded!")
+        
+        print("Step 3: Reading knowledge.txt...")
 
         self.gemini_api_key = os.environ.get(
             "GEMINI_API_KEY"
