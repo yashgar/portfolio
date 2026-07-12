@@ -22,7 +22,7 @@ app = Flask(
     static_folder=".",
     static_url_path=""
 )
-
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 app.secret_key = os.environ.get(
     "SECRET_KEY",
     "yash-portfolio-ai-secret"
