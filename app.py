@@ -6,10 +6,9 @@ from flask import (
     session
 )
 
-from sentence_transformers import (
-    SentenceTransformer,
-    util
-)
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 import requests
 import os
