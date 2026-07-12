@@ -1,0 +1,449 @@
+[PROFILE]
+
+Yash Agarwal is a Computer Science undergraduate at UPES, Dehradun, with an expected graduation year of 2026. He specializes in Artificial Intelligence and Machine Learning. His primary interests are machine learning, artificial intelligence, data science, computer vision, natural language processing, cybersecurity, and software development. He enjoys building practical AI systems that solve real-world problems rather than limiting his work to theoretical implementations.
+
+Yash is particularly interested in applying machine learning to areas such as cybersecurity, driver safety, banking, and intelligent automation. His portfolio demonstrates hands-on experience in developing machine learning models, processing data, evaluating model performance, and integrating AI models with software applications.
+
+Yash is currently looking for entry-level opportunities where he can apply his knowledge of artificial intelligence, machine learning, data science, and software engineering. He is interested in working on challenging technical problems and continuously improving his knowledge through practical development and experimentation.
+
+
+[EDUCATION]
+
+Yash Agarwal is pursuing Computer Science at UPES, Dehradun, and is expected to graduate in 2026. His specialization is Artificial Intelligence and Machine Learning.
+
+During his academic journey, Yash has developed knowledge of data structures and algorithms, machine learning, deep learning, computer vision, natural language processing, computer networks, database systems, and cybersecurity.
+
+His academic specialization has allowed him to understand both the theoretical concepts behind artificial intelligence and their practical implementation. He has applied these concepts in projects involving phishing detection, driver drowsiness detection, banking chatbots, fraud detection, and computer vision.
+
+Yash's education has provided him with a foundation in programming, problem solving, algorithmic thinking, and AI model development.
+
+
+[PROGRAMMING_SKILLS]
+
+Yash has programming experience with Python, Java, C, C++, HTML, and JavaScript.
+
+Python is one of Yash's primary languages for artificial intelligence, machine learning, data analysis, and backend development. He has used Python for model training, data preprocessing, feature engineering, computer vision, machine learning inference, and Flask-based web applications.
+
+Yash has used Java for software development and AI-integrated applications. His DigiBanker banking chatbot and parts of his Eye on Drive system involve Java-based development.
+
+He also understands C and C++, which have helped strengthen his understanding of programming fundamentals, data structures, algorithms, and problem solving.
+
+Yash has experience with HTML and JavaScript for developing web interfaces and integrating frontend applications with backend services.
+
+
+[TECHNICAL_SKILLS]
+
+Yash's technical skills include machine learning, artificial intelligence, deep learning, computer vision, natural language processing, data analysis, cybersecurity, and software development.
+
+His machine learning tools and libraries include scikit-learn, XGBoost, Random Forest models, TensorFlow, Keras, pandas, NumPy, and joblib.
+
+For computer vision, Yash has experience with OpenCV, Haar cascade classifiers, convolutional neural networks, and object detection concepts such as Faster R-CNN.
+
+For natural language processing, Yash has worked with OpenNLP, text processing, chatbot development, and semantic text understanding.
+
+Yash has experience using Flask and Django for backend and web application development. He has also worked with SQL and MongoDB for database-related tasks.
+
+His development tools include Git, GitHub, Visual Studio Code, IntelliJ, and Postman.
+
+Yash has practical knowledge of integrating AI models with software applications through REST APIs and backend services.
+
+
+[MACHINE_LEARNING_SKILLS]
+
+Yash has practical experience in machine learning model development, feature engineering, model evaluation, classification, anomaly detection, and model integration.
+
+He has worked with Random Forest, XGBoost, decision trees, support vector machines, clustering algorithms, convolutional neural networks, and ensemble learning techniques.
+
+Yash understands the machine learning workflow, including data collection, data preprocessing, feature extraction, training and testing data separation, model training, hyperparameter selection, model evaluation, and deployment.
+
+He has used accuracy and other evaluation techniques to analyze model performance. His projects demonstrate experience in comparing multiple machine learning algorithms and selecting suitable models for specific problems.
+
+Yash has applied machine learning to cybersecurity through phishing detection, banking through fraud detection, and driver safety through drowsiness and distraction detection.
+
+His strongest machine learning experience is in applied AI projects where trained models are integrated into usable software systems.
+
+
+[DEEP_LEARNING_SKILLS]
+
+Yash has experience with deep learning concepts and frameworks including TensorFlow and Keras.
+
+He understands convolutional neural networks and their application to computer vision problems. He has explored deep learning approaches for image classification, feature extraction, and object detection.
+
+Yash has worked with CNN-based architectures and understands concepts such as convolution, pooling, activation functions, training, validation, and model evaluation.
+
+His project experience has exposed him to integrating deep learning components with traditional machine learning and software applications.
+
+Yash continues to develop his knowledge of deep learning and is particularly interested in practical applications of neural networks in computer vision and intelligent systems.
+
+
+[DATA_SCIENCE_SKILLS]
+
+Yash has experience with data preprocessing, feature engineering, machine learning model development, and data analysis.
+
+He has used pandas and NumPy for data manipulation and preprocessing. He has also used Matplotlib for data visualization and model analysis.
+
+In his phishing detection project, Yash worked with URL datasets and extracted meaningful features from website addresses. These features included URL length, domain characteristics, special character counts, digit counts, HTTPS presence, and suspicious domain suffixes.
+
+He has experience preparing datasets for machine learning models, handling feature extraction, training classification models, and evaluating their performance.
+
+Yash's data science experience is primarily focused on using data to build predictive machine learning systems and solve practical classification problems.
+
+
+[IBM_INTERNSHIP]
+
+Yash completed an internship associated with IBM where he worked on a phishing website detection system.
+
+The objective of the project was to identify whether a website URL was legitimate or potentially malicious. Yash developed a machine learning-based approach that analyzed URL characteristics and classified websites using machine learning models.
+
+The project used Random Forest and XGBoost as major classification algorithms. Yash worked on data preprocessing, URL feature extraction, model training, model evaluation, and integrating the trained models into a web application.
+
+The phishing detection system achieved approximately 97 percent accuracy according to the project results presented in Yash's portfolio.
+
+A Flask-based web interface was developed to allow users to enter a URL and receive a phishing detection result. This made the machine learning model accessible through a practical application rather than keeping it as an isolated training notebook.
+
+The internship project helped Yash gain practical experience in machine learning, cybersecurity, data preprocessing, feature engineering, model evaluation, and AI application development.
+
+
+[PROJECT_EYE_ON_DRIVE]
+
+Eye on Drive is an AI-powered driver alert system developed by Yash Agarwal. The objective of the project is to improve driver safety by detecting signs of drowsiness and distraction.
+
+The system uses computer vision techniques to analyze the driver and identify behaviour associated with fatigue or distraction. OpenCV and Haar cascade classifiers are used as part of the detection process.
+
+According to Yash's portfolio, the Eye on Drive system achieved approximately 96 percent detection accuracy for driver drowsiness and distraction.
+
+The project combines Java-based application development with Python AI modules. Communication between different components is handled through a REST API, allowing the Java application and Python-based AI functionality to work together.
+
+When signs of drowsiness or distraction are detected, the system is designed to alert the driver. The main objective is to reduce the risk of accidents caused by driver fatigue or loss of attention.
+
+Eye on Drive demonstrates Yash's experience in computer vision, AI integration, OpenCV, Java, Python, REST APIs, and building AI systems for real-world safety problems.
+
+This project is one of Yash's strongest examples of computer vision and applied artificial intelligence experience.
+
+
+[PROJECT_DIGIBANKER]
+
+DigiBanker is an intelligent banking chatbot developed by Yash Agarwal. The project combines natural language processing with banking-related customer support and fraud detection functionality.
+
+The objective of DigiBanker is to allow users to interact with a banking system using natural language. The chatbot is designed to understand banking-related queries and provide relevant responses.
+
+Yash used natural language processing concepts and OpenNLP in the development of the chatbot. The system analyzes user input and attempts to understand the context of banking-related questions.
+
+According to Yash's portfolio, DigiBanker reduced customer query response time by approximately 70 percent.
+
+The project also includes a fraud detection module. The fraud detection functionality was designed to identify suspicious banking activity and improve the identification of potentially fraudulent transactions.
+
+According to the portfolio, the fraud detection component improved fraud detection rates by approximately 65 percent.
+
+The project involved Java, OpenNLP, Weka, machine learning concepts, decision trees, clustering, and chatbot development.
+
+DigiBanker demonstrates Yash's experience in natural language processing, Java development, banking technology, fraud detection, and integrating machine learning concepts into software applications.
+
+This project is one of Yash's strongest examples of natural language processing and intelligent chatbot development.
+
+
+[PROJECT_PHISHING_DETECTION]
+
+The Phishing Website Detection System is a machine learning-based cybersecurity project developed by Yash Agarwal during his IBM-related internship experience.
+
+The objective of the project is to classify website URLs as legitimate or potentially malicious.
+
+The system analyzes characteristics of a URL and extracts features that can indicate phishing behaviour. These features include URL length, domain length, suffix length, number of dots, number of dashes, number of underscores, number of slashes, digit count, HTTPS presence, the presence of the @ symbol, and suspicious domain suffixes.
+
+Yash experimented with Random Forest and XGBoost models for URL classification. These algorithms were selected because of their effectiveness in classification problems and their ability to work with engineered URL features.
+
+The project also explored character-level URL processing and hybrid machine learning approaches.
+
+According to Yash's portfolio, the phishing detection system achieved approximately 97 percent classification accuracy.
+
+A Flask-based web interface allows users to enter a URL for real-time analysis. The application processes the URL, extracts relevant features, uses the trained model for prediction, and displays the classification result.
+
+The project demonstrates Yash's experience with Python, Flask, pandas, NumPy, scikit-learn, Random Forest, XGBoost, feature engineering, cybersecurity, and machine learning deployment.
+
+This is one of Yash's strongest machine learning projects because it combines data preprocessing, feature engineering, model development, cybersecurity concepts, and web application integration.
+
+
+[PROJECT_COMPARISON]
+
+Eye on Drive, DigiBanker, and the Phishing Website Detection System demonstrate different areas of Yash's artificial intelligence experience.
+
+Eye on Drive primarily demonstrates computer vision and AI-based safety system development. It uses OpenCV and visual detection techniques to identify driver drowsiness and distraction.
+
+DigiBanker primarily demonstrates natural language processing, chatbot development, and fraud detection. It focuses on understanding banking-related queries and applying intelligent techniques to banking applications.
+
+The Phishing Website Detection System primarily demonstrates machine learning, feature engineering, data processing, cybersecurity, and classification model development. It uses Random Forest and XGBoost to identify potentially malicious URLs.
+
+For a computer vision role, Eye on Drive is the most relevant project.
+
+For an NLP or chatbot-related role, DigiBanker is the most relevant project.
+
+For a machine learning, data science, or cybersecurity-related role, the Phishing Website Detection System is the most relevant project.
+
+Together, these projects demonstrate that Yash has applied artificial intelligence across computer vision, natural language processing, machine learning, banking, cybersecurity, and driver safety.
+
+
+[COMPUTER_VISION_EXPERIENCE]
+
+Yash has practical experience with computer vision through projects involving driver monitoring and helmet detection.
+
+His Eye on Drive project uses computer vision to detect driver drowsiness and distraction. The project involves OpenCV and Haar cascade classifiers.
+
+Yash has also explored helmet detection using Faster R-CNN, OpenCV, and Flask. This work provided experience with object detection and computer vision-based safety applications.
+
+His computer vision experience includes image processing concepts, detection systems, OpenCV integration, and applying AI techniques to visual data.
+
+For computer vision-related roles, Eye on Drive is the strongest project in Yash's portfolio.
+
+
+[NLP_EXPERIENCE]
+
+Yash has experience with natural language processing through the DigiBanker banking chatbot.
+
+DigiBanker was designed to understand banking-related customer queries and provide relevant responses. Yash worked with OpenNLP and text-processing concepts while developing the chatbot.
+
+The project exposed Yash to natural language input processing, chatbot logic, banking-related query handling, and the integration of NLP functionality into Java applications.
+
+Yash's NLP experience is primarily practical and project-based. DigiBanker is the strongest evidence of his experience with natural language processing.
+
+
+[CYBERSECURITY_EXPERIENCE]
+
+Yash has applied artificial intelligence and machine learning to cybersecurity problems.
+
+His strongest cybersecurity-related project is the Phishing Website Detection System. The project uses machine learning to classify URLs as legitimate or potentially malicious.
+
+Yash worked with URL feature extraction, suspicious domain characteristics, machine learning classification, Random Forest, and XGBoost.
+
+He has also studied cybersecurity concepts and has experience with tools and environments related to cybersecurity learning.
+
+Yash's cybersecurity experience is particularly focused on applying machine learning to detect digital threats.
+
+
+[BACKEND_DEVELOPMENT]
+
+Yash has experience with backend development using Flask and Django.
+
+He has used Flask to build web interfaces and APIs for machine learning applications. His phishing detection system uses Flask to allow users to submit URLs and receive machine learning predictions.
+
+Yash also understands REST API concepts. His Eye on Drive project integrates Java and Python components using a REST-based architecture.
+
+His backend experience is closely connected with AI and machine learning application development.
+
+Yash is comfortable integrating trained machine learning models into backend applications and exposing AI functionality through software interfaces.
+
+
+[DATABASE_SKILLS]
+
+Yash has knowledge of SQL and MongoDB.
+
+He understands database concepts and has experience working with data in software and machine learning applications.
+
+His primary technical focus is artificial intelligence and machine learning, but he also understands the importance of databases in application development and data-driven systems.
+
+
+[PROBLEM_SOLVING]
+
+Yash has demonstrated problem-solving skills through machine learning projects, software development, and coding practice.
+
+He has solved more than 100 coding problems on LeetCode. This has helped him strengthen his understanding of data structures, algorithms, and logical problem solving.
+
+His project work has also required debugging machine learning pipelines, resolving library and dependency problems, handling data preprocessing issues, and integrating multiple technologies.
+
+For example, his projects have involved integrating Java with Python, connecting AI models to Flask applications, handling machine learning model training issues, and developing custom feature extraction logic.
+
+Yash approaches technical problems by understanding the issue, testing possible solutions, analyzing results, and iteratively improving the implementation.
+
+
+[ACHIEVEMENTS]
+
+Yash secured 7th rank in VSOC24 among more than 500 participants.
+
+He contributed to Buildspace Season 5, gaining exposure to building and developing technology-focused ideas.
+
+Yash has been involved with ACM activities and has served as a core member of an ACM Club. His involvement included contributing to technical activities and helping with events.
+
+Yash has solved more than 100 coding problems on LeetCode, demonstrating consistent practice in data structures, algorithms, and problem solving.
+
+He has also participated in technical hackathons and development activities, including Uhackathon 4.0.
+
+
+[CERTIFICATIONS]
+
+Yash has completed certifications and learning programs related to artificial intelligence, generative AI, cloud technologies, responsible AI, and data analytics.
+
+He completed Prompt Design in Vertex AI through Google. This learning experience focused on designing and improving prompts for generative AI applications using Vertex AI concepts.
+
+Yash completed a GenAI Powered Data Analytics job simulation through Forage. The program focused on using generative AI concepts in data analytics and understanding AI-supported analytical workflows.
+
+He has also completed learning content related to Generative AI and Responsible AI.
+
+These certifications complement Yash's practical project experience by expanding his knowledge of modern artificial intelligence technologies and responsible AI concepts.
+
+
+[LEADERSHIP_AND_ACTIVITIES]
+
+Yash has experience participating in technical communities and collaborative activities.
+
+He has been involved with ACM as a core member and has contributed to technical events and activities.
+
+Yash has also participated in hackathons and technology development programs.
+
+These experiences have helped him develop communication, teamwork, collaboration, and technical problem-solving skills.
+
+
+[STRENGTHS]
+
+Yash's primary technical strength is applied machine learning. He has experience taking machine learning concepts and using them to build practical applications.
+
+Another strength is his ability to work across multiple areas of artificial intelligence. His projects cover computer vision, natural language processing, cybersecurity, fraud detection, and machine learning classification.
+
+Yash also demonstrates an ability to integrate different technologies. For example, Eye on Drive combines Java and Python through REST APIs, while his phishing detection system combines machine learning models with a Flask web application.
+
+Problem solving and continuous learning are also strengths demonstrated through his coding practice, technical projects, certifications, and experimentation with different machine learning algorithms.
+
+Yash's profile is strongest when evaluated for practical AI development, machine learning projects, and entry-level AI or data-focused engineering roles.
+
+
+[AREAS_FOR_GROWTH]
+
+Based only on the information available in Yash's portfolio, his experience is primarily academic, internship-based, and project-based.
+
+The portfolio demonstrates strong practical experimentation with machine learning, but it currently contains limited evidence of developing and maintaining large-scale production machine learning systems.
+
+There is also limited portfolio evidence of advanced MLOps experience involving large-scale cloud deployment, automated machine learning pipelines, model monitoring, Kubernetes, or enterprise-level distributed AI infrastructure.
+
+These are areas Yash can continue developing as he gains professional experience.
+
+For an entry-level candidate, however, his portfolio demonstrates practical exposure to multiple AI domains and the ability to build working machine learning applications.
+
+
+[WHY_HIRE_YASH]
+
+Yash may be a suitable candidate for an entry-level artificial intelligence, machine learning, data science, or AI-focused software engineering role because his portfolio demonstrates practical project experience across multiple AI domains.
+
+He has applied machine learning to cybersecurity through phishing detection, computer vision to driver safety through Eye on Drive, and natural language processing to banking through DigiBanker.
+
+His IBM-related internship experience demonstrates exposure to a practical machine learning problem involving URL classification, feature engineering, Random Forest, XGBoost, and Flask-based application development.
+
+Yash also has programming experience with Python and Java and understands how to integrate AI components into software applications.
+
+His profile is particularly suitable for organizations looking for an entry-level candidate with practical machine learning exposure, a willingness to learn, and experience experimenting with different AI technologies.
+
+Yash should be evaluated as an early-career candidate with applied AI project experience rather than as a senior or production-scale machine learning engineer.
+
+
+[ML_ENGINEER_SUITABILITY]
+
+Yash is potentially suitable for an entry-level Machine Learning Engineer role.
+
+His portfolio demonstrates experience with machine learning algorithms, model training, feature engineering, model evaluation, Python, scikit-learn, XGBoost, Random Forest, TensorFlow, Keras, and AI application integration.
+
+The Phishing Website Detection System is particularly relevant to machine learning engineering because it involves data preprocessing, feature extraction, training multiple classification models, evaluating performance, and integrating the selected models into a Flask application.
+
+Eye on Drive also demonstrates the integration of AI functionality with a larger software system.
+
+Yash's current profile is strongest for junior or entry-level machine learning engineering opportunities. His portfolio currently demonstrates less experience with large-scale MLOps, distributed training, production model monitoring, and enterprise cloud infrastructure.
+
+
+[AI_ENGINEER_SUITABILITY]
+
+Yash is suitable for consideration for entry-level AI Engineer roles based on the projects available in his portfolio.
+
+His experience spans computer vision, natural language processing, machine learning, and intelligent software applications.
+
+Eye on Drive demonstrates computer vision and AI system integration. DigiBanker demonstrates NLP and intelligent chatbot development. The Phishing Website Detection System demonstrates machine learning classification and AI application deployment.
+
+Yash also has experience using Python, Java, Flask, OpenCV, TensorFlow, Keras, and machine learning libraries.
+
+His ability to work across different AI domains makes AI Engineer one of the most relevant career paths for his current profile.
+
+
+[DATA_SCIENTIST_SUITABILITY]
+
+Yash is suitable for consideration for junior or entry-level Data Scientist roles.
+
+He has experience with Python, pandas, NumPy, scikit-learn, Random Forest, XGBoost, feature engineering, data preprocessing, and machine learning model evaluation.
+
+His phishing detection project provides the strongest evidence for a data science role because it required analyzing URL data, creating predictive features, training classification models, and evaluating model performance.
+
+Yash's portfolio currently focuses more heavily on predictive machine learning applications than advanced statistical analysis, business intelligence, or large-scale analytics.
+
+Therefore, his current profile appears particularly suitable for machine learning-focused Data Scientist or Junior Data Scientist roles.
+
+
+[SOFTWARE_ENGINEER_SUITABILITY]
+
+Yash can be considered for entry-level Software Engineer roles, particularly roles involving artificial intelligence, backend development, or machine learning integration.
+
+He has programming experience with Python, Java, C, C++, HTML, and JavaScript.
+
+His projects demonstrate software integration skills. Eye on Drive combines Java and Python through REST APIs, while the phishing detection system integrates machine learning models with Flask.
+
+Yash's strongest software engineering profile is in AI-focused application development rather than frontend-only development.
+
+Roles involving Python development, Java development, backend systems, AI integration, or machine learning applications are particularly relevant to his experience.
+
+
+[BEST_ROLE_FOR_YASH]
+
+Based on the available portfolio information, the most relevant roles for Yash are AI Engineer, Machine Learning Engineer, Junior Data Scientist, Data Scientist with a machine learning focus, and Software Engineer working on AI-based applications.
+
+AI Engineer and Machine Learning Engineer appear particularly aligned with his project experience because his portfolio combines machine learning models with practical software systems.
+
+Junior Data Scientist is also relevant because Yash has experience with data preprocessing, feature engineering, classification models, and model evaluation.
+
+His profile is currently less focused on frontend development, DevOps, or advanced cloud infrastructure.
+
+The strongest career direction based on his portfolio is applied artificial intelligence and machine learning engineering.
+
+
+[BEST_PROJECT]
+
+The strongest project depends on the role being considered.
+
+For a Machine Learning Engineer or Data Scientist role, the Phishing Website Detection System is likely Yash's strongest project. It demonstrates feature engineering, data preprocessing, Random Forest, XGBoost, model evaluation, cybersecurity knowledge, and Flask-based model integration.
+
+For an AI Engineer or Computer Vision role, Eye on Drive is likely the strongest project. It demonstrates computer vision, OpenCV, AI-based detection, Java and Python integration, and REST APIs.
+
+For an NLP or chatbot-related role, DigiBanker is the most relevant project because it demonstrates natural language processing, banking chatbot development, and fraud detection concepts.
+
+Overall, the Phishing Website Detection System provides the strongest evidence of Yash's end-to-end machine learning workflow.
+
+
+[RECRUITER_SUMMARY]
+
+Yash Agarwal is an early-career Computer Science candidate specializing in Artificial Intelligence and Machine Learning.
+
+His portfolio demonstrates practical experience in machine learning, computer vision, natural language processing, and AI application development.
+
+His major projects include an AI-powered driver drowsiness and distraction detection system, an NLP-based banking chatbot with fraud detection functionality, and a machine learning-based phishing website detection system.
+
+He has worked with Python, Java, scikit-learn, XGBoost, Random Forest, TensorFlow, Keras, OpenCV, Flask, and NLP technologies.
+
+His strongest qualities are practical AI development, machine learning experimentation, problem solving, and the ability to integrate AI models into software applications.
+
+Yash is primarily suited for entry-level AI Engineer, Machine Learning Engineer, Junior Data Scientist, or AI-focused Software Engineer opportunities.
+
+
+[CONTACT]
+
+Yash Agarwal can be contacted by email at agarwalyash3004@gmail.com.
+
+Visitors can also connect with Yash through the LinkedIn profile available on his portfolio website.
+
+Yash's GitHub profile is available through the portfolio and contains his development projects and repositories.
+
+His LeetCode profile is also linked through the portfolio and demonstrates his coding and problem-solving practice.
+
+
+[UNKNOWN_INFORMATION_POLICY]
+
+The AI assistant should never invent information about Yash Agarwal.
+
+If information about Yash's salary expectations, exact current location, willingness to relocate, notice period, employment offers, personal life, references, or other unavailable details is requested, the assistant should clearly state that the portfolio does not contain enough verified information to answer accurately.
+
+The assistant should direct visitors to contact Yash at agarwalyash3004@gmail.com when verified information is unavailable.
+
+The assistant should never claim that Yash has professional experience, technical skills, certifications, project results, or achievements that are not explicitly available in the portfolio knowledge.
+
+The assistant should describe Yash as an early-career or entry-level candidate unless verified portfolio information indicates otherwise.
