@@ -37,15 +37,6 @@ def health():
 class PortfolioRAGChatBot:
 
     def __init__(self):
-
-        print("Step 1: Starting chatbot...")
-
-        print("Step 2: Loading SentenceTransformer...")
-        self.model = SentenceTransformer("all-MiniLM-L6-v2")
-        print("Model loaded!")
-        
-        print("Step 3: Reading knowledge.txt...")
-
         self.gemini_api_key = os.environ.get(
             "GEMINI_API_KEY"
         )
@@ -65,18 +56,19 @@ class PortfolioRAGChatBot:
             chunk["text"]
             for chunk in self.chunks
         ]
+        print("Building TF-IDF index...")
 
-        print("Generating embeddings...")
-
-        self.embeddings = self.model.encode(
-            self.chunk_texts,
-            convert_to_numpy=True,
-            normalize_embeddings=True,
-            batch_size=8,
-            show_progress_bar=False
+        self.vectorizer = TfidfVectorizer(
+            lowercase=True,
+            stop_words="english",
+            ngram_range=(1, 2)
         )
         
-        print("Embeddings generated!")
+        self.tfidf_matrix = self.vectorizer.fit_transform(
+            self.chunk_texts
+        )
+        
+        print("TF-IDF index ready!")
 
         self.conversations = {}
 
@@ -1047,90 +1039,74 @@ class PortfolioRAGChatBot:
         query,
         max_chunks=8
     ):
-
-        query_embedding = self.model.encode(
-            query,
-            convert_to_numpy=True,
-            normalize_embeddings=True
-        )
-
+    
+        # Convert query to TF-IDF vector
+        query_vector = self.vectorizer.transform([query])
+    
         candidates = []
-
-        for index, chunk in enumerate(
-            self.chunks
-        ):
-
-            if chunk["section"] not in (
-                section_names
-            ):
-
+    
+        for index, chunk in enumerate(self.chunks):
+    
+            if chunk["section"] not in section_names:
                 continue
-
-            score = float(
-                np.dot(
-                    query_embedding,
-                    self.embeddings[index]
-                )
-            )
-
+    
+            # Compare query with the already-built TF-IDF matrix
+            score = cosine_similarity(
+                query_vector,
+                self.tfidf_matrix[index]
+            )[0][0]
+    
             candidates.append({
                 **chunk,
-                "score": score
+                "score": float(score)
             })
-
+    
         candidates.sort(
             key=lambda item: item["score"],
             reverse=True
         )
-
-        # For exact routed sections we keep enough paragraphs
-        # to describe the topic properly.
-        selected = candidates[:max_chunks]
-
-        return selected
+    
+        return candidates[:max_chunks]
 
     def semantic_retrieve(
         self,
         query,
         top_k=6
     ):
-
-        query_embedding = self.model.encode(
-            query,
-            convert_to_numpy=True,
-            normalize_embeddings=True
-        )
-
-        scores = np.dot(
-            self.embeddings,
-            query_embedding
-        )
-
+    
+        # Convert the query to TF-IDF vector
+        query_vector = self.vectorizer.transform([query])
+    
+        # Compute cosine similarity against all chunks
+        scores = cosine_similarity(
+            query_vector,
+            self.tfidf_matrix
+        ).flatten()
+    
         result_count = min(
             top_k,
             len(self.chunks)
         )
-
+    
         top_indices = np.argsort(scores)[::-1][:result_count]
-
+    
         results = []
-
+    
         for index in top_indices:
-
+    
             score_value = float(scores[index])
-
-            if score_value < 0.28:
+    
+            # Ignore weak matches
+            if score_value < 0.10:
                 continue
-
-            chunk = self.chunks[
-                int(index)
-            ]
-
+    
+            chunk = self.chunks[index]
+    
             results.append({
                 **chunk,
                 "score": score_value
             })
-
+    
         return results
 
     def retrieve_knowledge(
